@@ -1,0 +1,232 @@
+* {
+  font-family: 'Baloo 2', cursive;
+}
+
+html{
+  min-width: 320px;
+  min-height: 320px;
+}
+
+/*CLASSES REUTILIZÁVEIS*/
+.fullW{
+  width:100%;
+}
+
+.fullH{
+  height:100%;
+}
+
+.margG{
+  margin: .5rem;
+}
+
+.margM{
+  margin: .3rem;
+}
+
+.margP{
+  margin: .1rem;
+}
+
+.paddG{
+  padding: .5rem;
+}
+
+.paddP{
+  padding: .1rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.center{
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.centerSelf{
+  justify-self: center;
+  align-self: center;
+}
+
+.around{
+  justify-content: space-around;
+}
+
+.hor{
+  flex-direction: row;
+}
+
+.vert{
+  flex-direction: column;
+}
+
+.absolute {
+  position:absolute;
+}
+
+.sizeCover{
+  background-size: cover;
+}
+
+.rounded{
+  border-radius: 1rem;
+}
+
+body {
+  background-color: rgb(1, 23, 83);
+  color: aliceblue;
+}
+
+#title h1 {
+  text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double #ffffffce;
+	border-width: 4px 0;
+  text-align: center;
+}
+
+#title span{
+    font-size: 4em;
+		letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+    
+
+/* Clip Background Image */
+
+	  background: url(../../assets/jogo2.jpg) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 30s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+input{
+  background-color: #014444f8;
+  color: aliceblue;
+  border: aliceblue 1px solid;
+  padding: 1.5em;
+  font-size: 1.5em;
+  text-align: center;
+
+}
+
+input::placeholder{
+  color: rgba(11, 247, 31, 0.363);
+}
+
+.msg{
+  display: flex;
+  text-align: center;
+  font-size: 3em;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  transform: translateY(-50px);
+  opacity: 0;
+  animation-name: titleAnimation;
+  animation-timing-function:ease;
+  animation-duration: 8s;
+  animation-delay: 0.1s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  }
+  20% {
+    transform: translateY(-50px);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  80% {
+     transform: translateY(-50px);
+     opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  100% {
+     transform: translateY(-50px);
+     opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+  
+  }
+}
+
+button {
+  background-color: #0dff043d;
+  color: aliceblue;
+  border: aliceblue 1px solid;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tile {
+  text-align: center;
+  width: 50px;
+  display: inline-block;
+  padding: 40px;
+  font-size: 60px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 30px;
+  background-image: linear-gradient(rgb(3, 81, 90), rgb(75, 253, 229));
+  color: rgba(240, 248, 255, 0);
+}
+
+#chooseTiles{
+  width: 10rem;
+  align-items: center;
+}
+
+#chooseTiles button{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.menuTitle{
+  font-size: 0.5em;
+}
+
+#selectedPlayer {
+  font-size: 2em;
+  align-self: center;
+}
+
+
+

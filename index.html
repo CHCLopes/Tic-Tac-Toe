@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/mobile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap" rel="stylesheet">
+  <title>Tic-Tac-Toe</title>
+</head>
+<body class="flex center">
+  <div id="startScreen" class="flex center between vert margP paddP">
+    <div id="title" class="flex center hor between fullW margG">
+      <h1>
+        <span>
+          JOGO DA VELHA
+        </span>
+      </h1>
+    </div>
+    <div id="nomes" class="flex center vert margG paddP">
+      <div id="inputs" class="hor">
+        <input id="nome1" type="text" placeholder="Digite o Jogador 1" class="margG paddP rounded">
+        <input id="nome2" type="text" placeholder="Digite o Jogador 2" class=" margG paddP rounded">
+      </div>
+      <button id="enviar" onclick="jogadores()">enviar</button>
+    </div>
+    
+  </div>
+</div>
+
+  <script src="./scripts.js"></script>
+</body>
+</html>

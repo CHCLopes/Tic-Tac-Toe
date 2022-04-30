@@ -1,0 +1,79 @@
+/*RESPONSIVIDADE SMARPHONES COM A ORIENTAÇÃO EM RETRATO*/
+@media (min-width: 300px) and (max-width: 720px){
+  *{
+    padding: auto;
+    margin: auto;
+    font-size: .85em;
+  }
+
+  html {
+    width: auto;
+    height: auto
+  }
+
+  body{
+    width: 90vw;
+    height: 80vh;
+  }
+
+  #startScreen{
+    justify-content: center;
+    width: auto;
+    height: 70vh;
+    justify-self: center;
+  }
+
+  #title{
+    font-size: 1em;
+  }
+
+  #nomes {
+    justify-content: center;
+    align-items: center;
+    justify-self:flex-start;
+  }
+
+  #inputs {
+    flex-direction: column;
+    display: flex;
+    font-size: 1.5em;
+  }
+
+  button{
+    font-size: 2em;
+    margin: 1rem;
+  }
+
+  #firstMsgBtn{
+    flex-direction: column;
+    font-size: 1em;
+  }
+
+  #chooseTiles button{
+    font-size: 3em;
+  }
+
+  #game{
+    flex-direction: column;
+  }
+
+  #titleInGame{
+    font-size: 5em;
+  }
+
+  #gamedesk{
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .tile {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    padding: 0;
+    font-size: 60px;
+    border-radius: 15px;
+  }
+
+}
