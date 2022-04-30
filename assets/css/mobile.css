@@ -77,3 +77,84 @@
   }
 
 }
+
+/*RESPONSIVIDADE SMARPHONES COM A ORIENTAÇÃO EM PAISAGEM*/
+@media (min-height: 300px) and (max-height: 600px){
+  *{
+    padding: auto;
+    margin: auto;
+    font-size: .85em;
+  }
+
+  html {
+    width: auto;
+    height: auto
+  }
+
+  body{
+    width: 90vw;
+    height: 80vh;
+  }
+
+  #startScreen{
+    justify-content: center;
+    width: auto;
+    height: 80vh;
+    justify-self: center;
+  }
+
+  #title{
+    font-size: 1em;
+    margin: 3rem;
+  }
+
+  #nomes {
+    justify-content: center;
+    align-items: center;
+    justify-self:flex-start;
+  }
+
+  #inputs {
+    flex-direction: row;
+    display: flex;
+    font-size: 1.5em;
+  }
+
+  button{
+    font-size: 2em;
+    margin: 1rem;
+  }
+
+  #firstMsgBtn{
+    flex-direction: row;
+    font-size: 1em;
+  }
+
+  #chooseTiles button{
+    font-size: 3em;
+  }
+
+  #game{
+    flex-direction: row;
+  }
+
+  #titleInGame{
+    font-size: 5em;
+  }
+
+  #gamedesk{
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .tile {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    padding: 0;
+    font-size: 60px;
+    border-radius: 15px;
+  }
+
+}
